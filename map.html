@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Adarsh Mathamsetty
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIFIhSfJkhbsatUnu59SN7Oyg79b7G5-g" async defer></script>
+    
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>House address: <input type="text" id="address"/></label>
+       <label>City: <input type="text" id="city"/></label>
+       <label>State: <input type="text" id="state"/></label>
+       <label>Zip Code: <input type="text" id="zipcode"/></label>
+       <input type="button" onclick="sendRequest();" value="FIND"/>
+       <input type="button" onclick="erase();" value="CLEAR"/>
+	
+    </form>
+    <div id="map" style="width: 600px; height: 500px;"></div><br/>
+    <div id="output">&nbsp;</div>
+     
+
+  </body>
+</html>
+
